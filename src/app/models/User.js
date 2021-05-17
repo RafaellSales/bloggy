@@ -7,27 +7,27 @@ const UserSchema = new Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     email: {
       type: String,
-      required: true,
+      required: true
     },
     password: {
       type: String,
-      required: true,
+      required: true
     },
     bio: String,
     avatar: {
       type: String,
-      required: true,
+      required: true
     },
     posts: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Post',
-      },
-    ],
+        ref: 'Post'
+      }
+    ]
   },
   { timestamps: true }
 )
