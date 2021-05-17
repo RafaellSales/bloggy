@@ -11,7 +11,7 @@ const server = express()
 const port = process.env.PORT || 3000
 
 mongoose.connect(
-  `mongodb+srv://ahoycap:${process.env.DB_PASSWORD}@cluster0.wimfi.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
+  `mongodb+srv://semana:${process.env.DB_PASSWORD}@cluster0.wimfi.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true }
 )
 
